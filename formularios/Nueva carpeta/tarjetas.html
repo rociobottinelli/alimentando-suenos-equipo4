@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voluntariados</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<main>
+		<div class="voluntarios">
+			<div class="titulos">
+				<h1><span style="color:rgba(245, 234, 194, 1)">Doná </span><span style="color:white">y transforma realidades</span></h1>
+				<h3>Tu donación, por mas pequeña que sea, contribuirá a cambiar vidas y a construir un futuro más justo.</h3>
+			</div>
+
+			<form action="" class="formulario" id="formulario">
+
+				<!-- Grupo: Nombre -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Nombre*</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+				</div>
+
+				<!-- Grupo: Apellido -->
+				<div class="formulario__grupo" id="grupo__apellido">
+					<label for="apellido" class="formulario__label">Apellido*</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="apellido" id="apellido">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+				</div>
+
+				<!-- Grupo: Teléfono -->
+				<div class="formulario__grupo" id="grupo__telefono">
+					<label for="telefono" class="formulario__label">Número de Contacto*</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="telefono" id="telefono">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+				</div>
+
+				<!-- Grupo: Correo Electronico -->
+				<div class="formulario__grupo" id="grupo__correo">
+					<label for="correo" class="formulario__label">Correo Electrónico*</label>
+					<div class="formulario__grupo-input">
+						<input type="email" class="formulario__input" name="correo" id="correo">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+				</div>
+
+				<!-- Grupo: Cuanto donar -->
+				<div class="formulario__grupo" id="grupo__donar">
+					<label for="donar" class="formulario__label">¿Cada cuánto quiere donar?*</label>
+					<div class="formulario__grupo-input">
+						<select class="formulario__input" name="mes" id="selectMes">
+							<option disabled selected> </option>
+							<option>SOLO UNA VEZ</option>
+							<option>POR MES</option>
+							<option>POR AÑO</option>
+						</select>
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Campo requerido</p>
+				</div>
+
+
+				<!-- Grupo: MONTO -->
+				<div class="formulario__grupo" id="grupo__monto">
+					<label for="monto" class="formulario__label">Monto de la donación*</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="monto" id="monto">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El monto solo puede contener números .</p>
+				</div>
+
+				<!-- Grupo: Tarjeta -->
+				<div class="formulario__grupo" id="grupo__tarjeta">
+					<label for="tarjeta" class="formulario__label">Número de Tarjeta*</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="tarjeta" id="tarjeta">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El número de tarjeta solo puede contener numeros y el maximo son 19 dígitos.</p>
+				</div>
+
+				<!-- Grupo: DNI -->
+				<div class="formulario__grupo" id="grupo__dni">
+					<label for="dni" class="formulario__label">DNI*</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="dni" id="dni">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El dni solo puede contener números y el maximo son 8 dígitos.</p>
+				</div>
+
+				<div class="datos_finales">
+
+					<!-- Grupo: CVC -->
+				<div class="formulario__grupo" id="grupo__codigo">
+					<label for="codigo" class="formulario__label">CVC*</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="codigo" id="codigo">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El codigo de seguridad solo puede contener números y el maximo son 3 dígitos.</p>
+				</div>
+
+				<!-- Grupo: Expiración -->
+				<div class="formulario__grupo" id="grupo__vencimiento">
+					<label for="vencimiento" class="formulario__label">Expiración*</label>
+					<div class="formulario__grupo-input">
+						<input type="datetime-local" class="formulario__input" name="vencimiento" id="vencimiento">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Campo requerido.</p>
+				</div>
+				</div>
+				
+
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+				</div>
+
+
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button type="submit" class="formulario__btn">Donar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito"></p>
+				</div>
+			</form>
+		</div>
+		
+	</main>
+
+	<script src="tarjeta.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

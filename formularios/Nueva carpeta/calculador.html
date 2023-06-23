@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voluntariados</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<script>
+		function sumar(){
+			var num1 = document.getElementById("adultos").value;
+			var num2 = document.getElementById("comidas").value;
+			var num3 = document.getElementById("chicos").value;
+
+			if (num1 == ''){
+				num1 = 0;
+			}
+			if (num2 == ''){
+				num2 = 0;
+			}
+			if (num3 == ''){
+				num3 = 0;
+			}
+
+			var suma= (((parseInt(num1) + parseInt(num3))*700)*num2);
+			document.getElementById('resultado').value = suma;
+		}
+	</script>
+	<main>
+		<form action="" class="form2" id="form2">
+			<h4>Cantidad de personas:</h4>
+			<h4>¿Cuántas comidas?</h4>
+			<div class="form2_datos">
+				<input type="number" name="adultos" id="adultos" class="datos-input" onkeyup="sumar();">
+				<p>Adultos</p>
+			</div>
+			
+			
+			<input type="number" name="comidas" id="comidas" class="datos-input3" onkeyup="sumar();">
+
+			<div class="form2_datos">
+				<input type="number" name="chicos" id="chicos" class="datos-input2" onkeyup="sumar();">
+				<p>Niños</p>
+			</div>
+
+			<div class="final">
+				<h4>Total</h4>
+				<input type="number" name="resultado" id="resultado"  class="datos-input" readonly="" >
+			</div>
+			
+
+		</form>
+		
+	</main>
+
+	
+</body>
+</html>

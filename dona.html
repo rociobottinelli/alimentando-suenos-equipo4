@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doná</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/img/logo2.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Fuentes de Google -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles2.css" rel="stylesheet" />
+        <link href="css/styles_forms.css" rel="stylesheet" />
+       
+
+    </head>
+    <body>
+        
+    <!-- Menú de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"> <img src="assets/img/icono.png" alt="..." /> Alimentando Sueños</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="voluntariado.html">Voluntariado</a></li>
+                                <li class="nav-item"><a class="nav-link" href="dona.html">Doná</a></li>
+                    
+                        <li class="nav-item"><a class="nav-link" href="merenderos.html">Merenderos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Doná -->
+        <section class="page-section" id="dona">
+            <header class="masthead3">
+                <div class="container">
+                    <div class="masthead-heading text-uppercase">Doná</div>
+                    <div class="masthead-subheading">Tu colaboración puede cambiar la realidad de muchos chicos.</div>
+                </div>
+            </header>
+            <div>
+                <br>
+                <p>¡Ayuda a alimentar sonrisas! Dona hoy y apoya a los merenderos en su invaluable labor.</p>
+                <p>Sabemos que hay niños y niñas que dependen de los merenderos para recibir una comida adecuada y nutritiva. Pero no podemos hacerlo solos, necesitamos de tu generosidad para continuar brindando este apoyo vital.</p>
+                <p>Tu donación puede marcar la diferencia en la vida de estos chicos. Cada contribución, por pequeña que sea, se traduce en sonrisas, en esperanza y en la oportunidad de un futuro más prometedor. Con tu ayuda, podemos garantizar que ellos tengan acceso a una alimentación adecuada, lo cual es fundamental para su desarrollo físico y emocional.</p>
+                <p>Al elegir donar, estás demostrando tu compromiso con la comunidad y con la equidad. Cada peso donado se destina directamente a la compra de alimentos y suministros necesarios para los merenderos. Además, nos aseguramos de que los recursos se utilicen de manera eficiente y transparente, para maximizar el impacto de cada donación.</p>
+                <p>Nuestro merendero cuenta con un equipo de voluntarios comprometidos, quienes se esfuerzan día a día para llevar adelante esta noble tarea. Pero su labor no sería posible sin el apoyo económico de personas como vos. Juntos, podemos asegurar que ningún niño se vaya a dormir con hambre, que todos tengan la oportunidad de crecer sanos y felices.</p>
+            </div>
+            <section>
+                <script>
+                    function sumar(){
+			var num1 = document.getElementById("adultos").value;
+			var num2 = document.getElementById("comidas").value;
+			var num3 = document.getElementById("chicos").value;
+
+			if (num1 == ''){
+				num1 = 0;
+			}
+			if (num2 == ''){
+				num2 = 0;
+			}
+			if (num3 == ''){
+				num3 = 0;
+			}
+
+			var suma= (((parseInt(num1) + parseInt(num3))*700)*num2);
+			document.getElementById('resultado').value = '$'+ suma;
+	
+                    }
+                </script>
+                <h3><span style="color:#764700">Calculadora de donaciones</span></h3>
+                <p><span style="text-align:center">¿No estás seguro de cuanto donar? Acá podes calcular el alcance de tu contribución.</span></p>
+                <div class="calculadora">
+                    <form action="" class="form2" id="form2">
+                        <h4>Cantidad de personas:</h4>
+                        <h4>¿Cuántas comidas?</h4>
+                        <div class="form2_datos">
+                            <input type="number" name="adultos" id="adultos" class="datos-input" onkeyup="sumar();">
+                            <p>Adultos</p>
+                        </div>
+                        
+                        
+                        <input type="number" name="comidas" id="comidas" class="datos-input3" onkeyup="sumar();">
+            
+                        <div class="form2_datos">
+                            <input type="number" name="chicos" id="chicos" class="datos-input2" onkeyup="sumar();">
+                            <p>Niños</p>
+                        </div>
+            
+                        <div class="final">
+                            <h4>Total</h4>
+                            <input type="string" name="resultado" id="resultado"  class="datos-input" readonly="" >
+                        </div>
+                    
+            
+                    </form>
+                </div>
+            </section>
+          <div class="form_tarjeta">
+            <iframe src="./formularios/Nueva carpeta/tarjetas.html" frameborder="0" width="100%" height="800"></iframe>
+
+          </div>
+
+
+    <!-- Footer-->
+    <footer class="footer">
+        <div>
+            <p>© Todos los derechos reservados</p><p>UADE</p>
+            <p>Derechos de imágenes: freepik.es</p>
+        </div>
+        <div>
+           
+            <p>BOTTINELLI, Rocío</p>
+            <p>CEJAS, Araceli</p>
+            <p>BALLART, Drusila</p>
+            <p>CLAROS CORO, Juan Pablo</p>
+        </div>
+    </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/tarjeta.js"></script>
+        <script src="js/voluntario.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
